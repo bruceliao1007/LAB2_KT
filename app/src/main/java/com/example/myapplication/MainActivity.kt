@@ -16,9 +16,15 @@ class MainActivity : AppCompatActivity() {
         if (ed_name.length() < 1) tv_text.setText("請輸入玩家姓名")
         else {
             tv_name.setText(String.format("名字\n%s", ed_name.text.toString()))
+<<<<<<< HEAD
             if (btn_scissor.isChecked) tv_mmora.text = "我方出拳\n剪刀"
             else if (btn_stone.isChecked) tv_mmora.text = "我方出拳\n石頭"
             else tv_mmora.text = "我方出拳\n布"
+=======
+            if (btn_scissor.isChecked) tv_mmora.text =
+                "我方出拳\n剪刀" else if (btn_stone.isChecked) tv_mmora.text =
+                "我方出拳\n石頭" else tv_mmora.text = "我方出拳\n布"
+>>>>>>> bc2eadad22a44b19691af6a3f572b881e99615a8
 
             val computer = (Math.random() * 3).toInt()
             if (computer == 0) tv_cmora.text ="電腦出拳\n剪刀"
